@@ -16,6 +16,35 @@ ul {
     list-style: none;
 }
 /*Шапка*/
+.box {
+    display: flex: row ;
+    align-items: center;
+}
+.container{
+margin-left: auto;
+margin-right: auto;
+width: 1230px;
+padding-right: 15px;
+padding-left: 15px;
+outline: 2px solid teal;
+
+}
+
+ .page-info {
+ display: flex;
+ margin: 0px;
+ padding: 0px;
+
+ }
+ 
+.page-info .item + .item {
+margin-left: 50px;
+}
+
+.phone {
+    width: 150px;
+    margin: 0px;
+}
 .logo {
 
 color: var(--title-text-color) ;
@@ -31,8 +60,21 @@ line-height: 1.2;
     color: var(--accent-color);
 }
 
-.site-nav .link {
+.site-nav{
+margin: 0px;
+padding: 0px;
+display: flex;
+}
 
+.site-nav .item + .item
+{
+margin-left:50px;
+}
+
+.site-nav .link {
+display: block;
+padding-top: 32px;
+padding-bottom: 32px;
 color: var(--title-text-color) ;
 
 font-weight: 500;
@@ -46,17 +88,15 @@ letter-spacing: 0.02em;
 color: var(--accent-color);
 }
 
-.site-nav .link :hover, :focus {
-color: var(--accent-color);
-}
-
-.auth-nav .link :hover, :focus {
+.site-nav .link:hover,:focus{
 color: var(--accent-color);
 }
 
 /*Банер*/
 
-.hero-title{
+.hero-title{ 
+margin: 0px;
+margin-bottom: 46px;
 
 color: var(--title-text-color);
 
@@ -68,20 +108,33 @@ letter-spacing: 0.06em;
 
 }
 
-/*Головна сторінка*/
+
+/*Принципи роботи*/
 
 .section-title {
+text-align: center;   
+margin: 0px;
+margin-bottom: 50px;
+
 
 color: var(--title-text-color);
-
+    
 font-weight: 700;
 font-size: 36px;
 line-height: 1.2;
 text-align: center;
 }
-/*Принципи роботи*/
+
+.feature-list {
+width: 1230px;
+margin: 0px;
+padding-left: 15px;
+padding-right: 15px;
+
+}
 
 .feature-list .title {
+margin: 10px;
 
 color: var(--title-text-color) ;
 
@@ -92,15 +145,26 @@ line-height: 1.1;
 }
 
 .text-feature {
+margin: 0px;
 
 font-weight: 400;
 font-size: 14px;
 line-height: 1.7;
-
 }
+
+.feature-icon{
+margin-bottom: 30px;
+}
+
 /*Чем мы занимаемся*/
 
+.work-list{
+    margin: 0px;
+
+}
+
 .work-list .title{
+margin: 0px;
 
 color: var(--title-text-color) ;
 
@@ -110,14 +174,29 @@ line-height: 1.1;
 }
 /*Наша команда*/
 
-.team-list .title{
+.team-list {
+    margin: 0px;
+}
 
+.team-list .title{
+margin-top: 0px;
+margin-bottom: 10px;
 color: var(--title-text-color) ;
 
 
 font-weight: 500;
 font-size: 16px;
 line-height: 1.2;
+}
+.team-title {
+margin-top: 0px;
+margin-bottom: 16px;
+}
+
+/*Постоянные клиенты*/
+
+.customer-list {
+    margin: 0px;
 }
 
 /*Футер*/
@@ -141,6 +220,10 @@ line-height: 1.7;
 }
 
 .button-primary{
+display: inline-block;
+border-radius: 4px;
+padding: 10px 32px; 
+text-align: center;
 
  color: var(--background-color);
  background-color: var(--accent-color);
@@ -181,4 +264,4 @@ line-height: 1.9;}
     font-size: 18px;
     line-height: 1.5;
 }
-
+ 

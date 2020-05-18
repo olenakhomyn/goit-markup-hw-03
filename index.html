@@ -7,68 +7,77 @@
     <link 
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
      rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body class="page">
   <!--Шапка-->
-<header>
-    <nav>
-    <a href ="./index.html" class="logo"><span class="web">Web</span>Studio</a>
-     <ul class="site-nav">
-       <li class="link current"><a href="">Студия</a></li>
-       <li class="link"><a href="portfolio.html">Портфолио</a></li>
-       <li class="link"><a href="">Контакты</a></li>
-    </ul> 
-    </nav>
-     <ul class="auth-nav">
-       <li> <a href="info@devstudio.com" class="link">info@devstudio.com</a></li>
-       <li><p>+38 096 111 11 11</p></li>
-    </ul>
-</header>
+    <header >
+        <div class= "box">
+            <nav>
+                <a href ="./index.html" class="logo"><span class="web">Web</span>Studio</a>
+                 <ul class="site-nav">
+                   <li class="item"><a class="link current" href="">Студия</a></li>
+                   <li class="item"><a class="link" href="portfolio.html">Портфолио</a></li>
+                   <li class="item"><a class="link"href="">Контакты</a></li>
+                </ul> 
+                </nav>
+            <ul class="page-info">
+                   <li class="item"><a href="info@devstudio.com" class="link">info@devstudio.com</a></li>
+                   <li class="item"><p class="phone">+38 096 111 11 11</p></li>
+                </ul>
+        </div>
+    </header>
  <main> 
  <!--Банер-->
-<section class="hero">
+<section class="section">
+    
         <h1 class="hero-title">Еффективные решения для вашего бизнеса</h1>
         <a href="" class="button-primary">Заказать услугу</a>
+
 </section>
 <!--Принципи роботи-->
 <section class="section">
-    <h2 class="section-title"> Принципи роботи</h2>
+
+    <div class="container">
+        <h2 class="section-title"> Принципи роботи</h2>
     <ul class="feature-list">
         <li>
-        <a href="/" > <img src="./images/antenna.svg" alt="Антена"/></a>
+        <a href="/" > <img class="feature-icon" src="./images/antenna.svg" alt="Антена"/></a>
         <h3 class="title">Внимание к деталям</h3>
         <p class="text-feature"> 
            Идейные соображения, а также начало повседневной работы по формированию позиции.
         </p>
         </li> 
         <li>
-            <a href="/"> <img src="./images/clock.svg" alt="Часи"/></a>  
+            <a href="/"> <img class="feature-icon" src="./images/clock.svg" alt="Часи"/></a>  
         <h3 class="title">Пунктуальность</h3>
         <p class="text-feature"> 
             Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
         </p>
         </li> 
         <li>
-            <a href="/"> <img src="./images/comp.svg" alt="Компютер"/></a>
+            <a href="/"> <img class="feature-icon" src="./images/comp.svg" alt="Компютер"/></a>
         <h3 class="title">Планирование</h3>
         <p class="text-feature"> 
             Равным образом консультация с широким активом в значительной степени обуславливает.
         </p>
         </li>  
       <li>
-        <a href="/"> <img src="./images/space.svg" alt="Космотавт"/></a>
+        <a href="/"> <img class="feature-icon" src="./images/space.svg" alt="Космотавт"/></a>
         <h3 class="title">Современные технологии</h3>
         <p class="text-feature"> 
             Значимость этих проблем настолько очевидна, что реализация плановых заданий.
         </p>
         </li>
+    </div>
       
     </ul>
 </section>
 <!--Чем мы занимаемся-->
 <section class="section">
-    <h2  class="section-title">Чем мы занимаемся</h2>
+<div class="container">
+    <h2 class="section-title">Чем мы занимаемся</h2>
     <ul class="work-list">
     <li>
         <a href="/"><img src="./images/comp.jpg" alt="Ноутбук на столе" width=380></a>
@@ -83,15 +92,17 @@
         <h3 class="title">Дизайнерские решения</h3>
     </li>
 </ul>
+</div>
 </section>
 <!--Наша команда-->
 <section class="section">
+   <div class="container">
     <h2 class="section-title">Наша команда</h2>
     <ul class="team-list">
         <li>
             <img src="./images/john.png" alt="Фото сотрудника" width=278 >
             <h3 class="title">John Smith</h3>
-            <p>Product Designer</p>
+            <p class="team-title">Product Designer</p>
         <ul>
             <li><a href="/"class="icon"><img src="./images/instagram.svg" alt="Логотип Инстраграм"></a></li>
             <li><a href="/"class="icon"><img src="./images/twitter.svg" alt="Логотип Твиттер"></a></li>
@@ -102,7 +113,7 @@
 
             <img src="./images/marta.png" alt="Фото сотрудника" width=278>
             <h3 class="title">Marta Stewart</h3>
-            <p>Frontend Developer</p>
+            <p class="team-title">Frontend Developer</p>
             <ul>
                 <li><a href="/"class="icon"><img src="./images/instagram.svg" alt="Логотип Инстраграм"></a></li>
                 <li><a href="/"class="icon"><img src="./images/twitter.svg" alt="Логотип Твиттер"></a></li>
@@ -112,7 +123,7 @@
                
             <img src="./images/robert.png" alt="Фото сотрудника" width=278>
             <h3 class="title">Robert Jakis</h3>
-            <p>Marketing</p>           
+            <p class="team-title">Marketing</p>           
          <ul>
             <li><a href="/"class="icon"><img src="./images/instagram.svg" alt="Логотип Инстраграм"></a></li>
             <li><a href="/"class="icon"><img src="./images/twitter.svg" alt="Логотип Твиттер"></a></li>
@@ -122,7 +133,7 @@
 
              <img src="./images/martin.png" alt="Фото сотрудника" width=278>
             <h3 class="title">Martin Doe</h3>
-            <p>UI Designer</p>
+            <p class="team-title">UI Designer</p>
            <ul>
             <li><a href="/"class="icon"><img src="./images/instagram.svg" alt="Логотип Инстраграм"></a></li>
             <li><a href="/"class="icon"><img src="./images/twitter.svg" alt="Логотип Твиттер"></a></li>
@@ -132,10 +143,12 @@
            
     </li>
 </ul>
+   </div>
 </section>
 <!--Постоянные клиенты-->
 <section class="section">
-    <h2  class="section-title">Постоянные клиенты</h2>
+    <div class="container">
+        <h2  class="section-title">Постоянные клиенты</h2>
     <ul class="customer-list ">
         <li class="title"><a href="/"><img src="./images/Client1.svg" alt="Компания"></a></li>
         <li class="title"><a href="/"><img src="./images/Client2.svg" alt="Компания"></a></li>
@@ -144,6 +157,7 @@
         <li class="title"><a href="/"><img src="./images/Client5.svg" alt="Компания"></a></li>
         <li class="title"><a href="/"><img src="./images/Client6.svg" alt="Компания"></a></li>
     </ul>
+    </div>
 </section>
 </main>
 <!--Футер-->
