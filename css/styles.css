@@ -16,9 +16,16 @@ ul {
     list-style: none;
 }
 /*Шапка*/
-.box {
-    display: flex: row ;
-    align-items: center;
+.container-nav {
+display: flex;
+
+margin-left: auto;
+margin-left: auto;
+margin-right: auto;
+width: 1230px;
+padding-right: 15px;
+padding-left: 15px;
+outline: 2px solid teal;
 }
 .container{
 margin-left: auto;
