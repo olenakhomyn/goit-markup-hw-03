@@ -39,6 +39,7 @@ outline: 2px solid teal;
 
  .page-info {
  display: flex;
+ margin-left: auto;
  margin: 0px;
  padding: 0px;
 
@@ -133,6 +134,7 @@ text-align: center;
 }
 
 .feature-list {
+display: flex;
 width: 1230px;
 margin: 0px;
 padding-left: 15px;
@@ -166,7 +168,8 @@ margin-bottom: 30px;
 /*Чем мы занимаемся*/
 
 .work-list{
-    margin: 0px;
+display: flex;
+margin: 0px;
 
 }
 
@@ -250,6 +253,17 @@ line-height: 1.9;
     background-color: var(--accent-color);
 }
 /*Портфолио*/
+.section-portfolio{
+margin: auto;
+color: var(--title-text-color);
+        
+font-weight: 700;
+font-size: 36px;
+line-height: 1.2;
+text-align: center;
+    }
+
+
 .title-portfolio {
 
 color: var(--title-text-color);
@@ -259,7 +273,22 @@ font-size: 14px;
 line-height: 1.1;
 letter-spacing: 0.02em;
 }
+.button-portfolio{
+margin: auto;
 
+color: var(--title-text-color);
+background-color: var(--background-button-color);
+    
+font-family: Roboto;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.7;
+    }
+.button-portfolio .nav :hover, :focus{
+margin:auto;
+color: var(--background-color);
+background-color: var(--accent-color);
+    }
 /* Текст*/
 .text {
 font-weight: 400;
