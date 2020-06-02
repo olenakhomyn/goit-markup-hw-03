@@ -402,6 +402,7 @@ text-align: center;
 
 .title-portfolio {
 margin: 0px;
+margin-bottom: 25px;
 color: var(--title-text-color);
 
 font-weight: 500;
@@ -435,10 +436,13 @@ font-size: 16px;
 line-height: 1.7;}
 
 .nav-portfolio.last {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
-
+.section .flex-portfolio{
+padding: 0px;
+background-color: var(--primary-text-color);
+}
 .flex-portfolio {
 display: flex;
 flex-wrap: wrap;
@@ -448,8 +452,7 @@ width: 370px;
 margin-right: 30px;
 }
 
-.flex-portfolion.item:nth-child(3n) 
-{
+ .item :nth-child(3n){
 margin-right: 0px;
 }
 
@@ -458,10 +461,11 @@ margin-right: 0px;
 /* Текст*/
 .text {
 margin: 0px;
+text-align: center;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.9;
-text-align: center;
+
 }
 
 .text-about {
