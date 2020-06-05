@@ -292,7 +292,7 @@ padding: 0px;
     margin-right: 30px;
 }
 
-.team-box, .benefit-item:last-child{
+.team-last {
     margin-right: 0px;
 }
 
